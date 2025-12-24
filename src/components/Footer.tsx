@@ -47,10 +47,11 @@ export function Footer() {
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
                 <FileText className="w-5 h-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold">DocuFlow</span>
+              <span className="text-xl font-bold">SmartDocs Pro</span>
             </Link>
             <p className="text-sidebar-foreground/70 mb-6 max-w-xs">
-              Enterprise-grade document management that simplifies your workflow and ensures compliance.
+              Enterprise-grade document management that simplifies your workflow
+              and ensures compliance.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
@@ -65,53 +66,65 @@ export function Footer() {
               ))}
             </div>
           </div>
-          
+
           {/* Links */}
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-3">
               {footerLinks.product.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href} className="text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-sidebar-foreground/70 hover:text-sidebar-foreground transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -119,11 +132,11 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        
+
         {/* Bottom bar */}
         <div className="pt-8 border-t border-sidebar-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-sidebar-foreground/60">
-            © {new Date().getFullYear()} DocuFlow. All rights reserved.
+            © {new Date().getFullYear()} SmartDocs Pro. All rights reserved.
           </p>
           <p className="text-sm text-sidebar-foreground/60">
             Built with ❤️ for document professionals

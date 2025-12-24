@@ -5,18 +5,16 @@ import { ChevronDown, Menu, X, FileText } from "lucide-react";
 
 const navItems = [
   {
-    label: "Solution",
+    label: "Our Solution",
     href: "#solution",
-    hasDropdown: true,
-    dropdownItems: [
-      { label: "Document Control", href: "#document-control" },
-      { label: "Workflow Automation", href: "#workflow" },
-      { label: "Compliance Management", href: "#compliance" },
-    ],
+    // hasDropdown: true,
+    // dropdownItems: [
+    //   { label: "Document Control", href: "#document-control" },
+    //   { label: "Workflow Automation", href: "#workflow" },
+    //   { label: "Compliance Management", href: "#compliance" },
+    // ],
   },
   { label: "Features", href: "#features" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Resources", href: "#resources" },
 ];
 
 export function Navbar() {
@@ -29,10 +27,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <FileText className="w-5 h-5 text-primary-foreground" />
+            <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center">
+              <img src="/logo.svg" alt="SmartDocs Pro Logo" className="w-6 h-6" />
             </div>
-            <span className="text-xl font-bold text-foreground">DocuFlow</span>
+            <span className="text-xl font-bold text-foreground">
+              SmartDocs Pro
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,7 +41,9 @@ export function Navbar() {
               <div
                 key={item.label}
                 className="relative"
-                onMouseEnter={() => item.hasDropdown && setActiveDropdown(item.label)}
+                onMouseEnter={() =>
+                  item.hasDropdown && setActiveDropdown(item.label)
+                }
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <a
@@ -51,7 +53,7 @@ export function Navbar() {
                   {item.label}
                   {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
                 </a>
-                
+
                 {/* Dropdown */}
                 {item.hasDropdown && activeDropdown === item.label && (
                   <div className="absolute top-full left-0 mt-1 w-56 bg-card rounded-xl shadow-elevated border border-border/50 overflow-hidden animate-fade-in">

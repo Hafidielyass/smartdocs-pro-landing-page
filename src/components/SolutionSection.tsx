@@ -18,23 +18,27 @@ export function SolutionSection() {
               />
             </div>
           </div>
-          
+
           {/* Content */}
           <div className="order-1 lg:order-2">
             <span className="inline-block px-4 py-1.5 bg-secondary rounded-full text-sm font-medium text-secondary-foreground mb-6">
               Our Solution
             </span>
-            
+
             <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-foreground leading-tight mb-6">
-              Powered by <span className="text-primary">mlean mPS</span> integration
+              Powered by <span className="text-primary">mlean mPS</span>{" "}
+              integration
             </h2>
-            
+
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              DocuFlow works hand-in-hand with <strong className="text-foreground">mlean mPS</strong> to deliver a complete document management solution for lean manufacturing environments.
-              From intelligent classification to automated workflows and compliance tracking—we handle 
-              it all so your team can focus on what matters.
+              SmartDocs Pro works hand-in-hand with{" "}
+              <strong className="text-foreground">mlean mPS</strong> to deliver
+              a complete document management solution for lean manufacturing
+              environments. From intelligent classification to automated
+              workflows and compliance tracking—we handle it all so your team
+              can focus on what matters.
             </p>
-            
+
             <ul className="space-y-4 mb-8">
               {[
                 "Automatic version control & audit trails",
@@ -44,7 +48,13 @@ export function SolutionSection() {
               ].map((feature, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <div className="mt-1 w-5 h-5 rounded-full bg-chart-2/20 flex items-center justify-center flex-shrink-0">
-                    <svg className="w-3 h-3 text-chart-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                    <svg
+                      className="w-3 h-3 text-chart-2"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="3"
+                    >
                       <polyline points="20,6 9,17 4,12" />
                     </svg>
                   </div>
@@ -52,7 +62,7 @@ export function SolutionSection() {
                 </li>
               ))}
             </ul>
-            
+
             <Button variant="hero" size="lg" className="group">
               Explore the Platform
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
